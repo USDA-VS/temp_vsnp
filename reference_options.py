@@ -102,6 +102,7 @@ class Ref_Options:
             ref_options = ref_options + more_ref_options
         print(f'Reference Options:')
         ref_options = [each_path for each_path in ref_options if not re.search('.*xlsx', each_path)] #remove excel files
+        ref_options = [each_path for each_path in ref_options if not re.search('.*png', each_path)] #remove png files
         print("\nReference option file being used:")
         for option in ref_options:
             print(f'\t{os.path.split(option)[-1]}')
