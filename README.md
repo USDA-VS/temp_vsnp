@@ -8,7 +8,7 @@ Other than a FASTA file no other dependency file is required to run vSNP, but mo
 
 `path_adder.py` is used to direct vSNP to a directory containing dependencies for a specific reference.
 
-![](../temp_vsnp/dependencies/directory_screen_shot.png)
+![](./dependencies/directory_screen_shot.png)
 
 For example, running `path_adder.py -w /path/to/vsnp_dependencies` all subdirectories are accessible using the `-r` option.  `vSNP_step1.py -r1 *_R1*gz -r2 *R2*gz -r Mycobacterium_AF2122` will use NC_002945v4.fasta to align reads.  It is recommended the path to dependencies be placed on shared storage available to both compute resources and subject matter expert.
 
